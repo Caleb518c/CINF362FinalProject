@@ -183,6 +183,100 @@ nav {
 
     
 
+/* ------------------ =Fridge ------------------ */
+
+
+.fridgeRow1 {
+    display: flex;
+}
+
+    .shoppingList {
+        width: 50%;
+    }
+
+        .shoppingListContainer {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+
+            background-color: rgb(218, 218, 218);
+            border-radius: 15px;
+        }
+
+            .shoppingListContainer li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                padding: 1%;
+                box-sizing: border-box;
+            }
+
+    .foodRestrictions {
+        width: 30%;
+    }
+
+        .foodRestrictionsContainer {
+            display: flex;
+            flex-direction: column;
+
+            background-color: rgb(218, 218, 218);
+            border-radius: 15px;
+        }
+
+            .foodRestrictionsContainer li {
+                display: flex;
+                align-items: center;
+            }
+            
+                .foodRestrictionsContainer li img:nth-child(1) {
+                    height: 50px;
+                    width: 50px;
+
+                    border-radius: 9999px;
+                }
+
+                .foodRestrictionsContainer li p {
+
+                }
+
+                .foodRestrictionsQuestionMarkIcon {
+                    height: 40px;
+                    width: 40px;
+                }
+
+
+.fridgeRow2{}
+
+    .fridgeTable tr th {
+        border: solid black 1px;
+    }
+
+    .fridgeTable th:not(.fridgeTableHeading) {
+        height: 60px;
+    }
+
+        .fridgeTableProfileIcon {
+           height: 50px; 
+           width: 50px;
+
+           border-radius: 9999px;
+        }
+
+        .fridgeTableItemContainer {
+            display: flex;
+            align-items: center;
+        }
+
+            .fridgeTableItemContainer img {
+                height: 50px;
+                width: 50px;
+            }
+
+
+
+
+
 
 
 /* ------------------ =RoomateInfoPage --------------------- */
