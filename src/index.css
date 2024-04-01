@@ -91,12 +91,12 @@ This is important as it allows for easier searching within the IDE for different
 /* --- End of style guide --- */
 
 
-
 * { 
     margin: 0;
     padding: 0;
 }
 
+/* --------------------- =NavBar ------------------------ */
 
 nav {
     display: flex;
@@ -104,6 +104,7 @@ nav {
     justify-content: space-between;
     width: 100vw;
     padding: 1%;
+    box-sizing: border-box;
     
     background-color: rgb(195, 195, 195);
 }   
@@ -123,11 +124,109 @@ nav {
 
         }
 
-        nav ul li {
+        nav ul a {
             all: unset;
             padding: 0 3%;
+
+            cursor: pointer;
         }
 
     .navRight {
-        
+        display: flex;
+        justify-content: center;
     }
+
+        .navRight img:nth-child(1) {
+            width: 75px;
+
+            border-radius: 9999px;
+        }
+
+        .navRight img:nth-child(2) {
+            width: 75px;
+        }
+
+
+    /* ----------------------- =Home ---------------------------- */
+
+
+    .allRoomatesHeading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .allRoomatesHeading div {
+            display: flex;
+        }
+
+    .allRoomatesProfileImgContainer {
+
+    }
+
+        .allRoomatesProfileImgContainer img {
+            width: 75px;
+
+            border-radius: 9999px;
+        }
+
+
+    .todaysTaskTable tr th {
+        border: solid black 1px;
+    }
+
+        .todaysTaskTable img {
+            width: 50px;
+
+            border-radius: 9999px;
+        }
+
+    
+
+
+
+/* ------------------ =RoomateInfoPage --------------------- */
+
+.roomateInfoTileContainer {
+    display: flex;
+}
+
+    .roomateInfoTile {
+        display: flex;
+        padding: 1%;
+        width: 80%;
+        
+        border-radius: 15px;
+        background: rgb(208, 208, 208);
+    }
+
+        .roomateProfileMainImg {
+            width: 150px; 
+            height: 150px;
+
+            border-radius: 9999px;
+        }
+
+        .roomateInfoTileRow2 {
+            display: flex;
+
+        }
+
+            .roomateInfoTileRow2 div {
+                display: flex;
+                
+            }
+
+            .roomateInfoTileRow2 div img {
+                width: 25px;     
+                
+            }
+
+
+
+
+
+
+
+
+
