@@ -1,136 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav>
-        <div class="navLeft">
-            <div id="menu-icon" class="bx bx-menu"></div>
-            <img src="/public/logo.png" alt="logo" class="navLogo">
-            <div>
-                <a href="index.html">Home</a>
-                <a>Calendar</a>
-                <a href="fridge.html">Fridge</a>
-                <a href="roomates.html">Roomies</a>
-            </div>
+      <div class="navLeft">
+        <div id="menu-icon" class="bx bx-menu"></div>
+        <img src="./logo.png" alt="logo" class="navLogo" />
+        <div>
+          <a href="index.html">Home</a>
+          <a>Calendar</a>
+          <a href="fridge.html">Fridge</a>
+          <a href="roomates.html">Roomies</a>
         </div>
-        <div class="navRight">
-            <img src="/public/vinnyPic.webp" alt="profile icon">
-            <img src="/public/bell.png" alt="notification bell">
-        </div>
+      </div>
+      <div class="navRight">
+        <img src="./vinnyPic.webp" alt="profile icon" />
+        <img src="./bell.png" alt="notification bell" />
+      </div>
     </nav>
 
     <main>
-
-        <section class="fridgeRow1">
-            <section class="shoppingList">
-                <h1>Shopping List</h1>
-                <ul class="shoppingListContainer">
-                    <li>
-                        <p>Walnuts</p>
-                        <input type="checkbox">
-                    </li>
-                    <li>
-                        <p>Walnuts</p>
-                        <input type="checkbox">
-                    </li>
-                    <li>
-                        <p>Walnuts</p>
-                        <input type="checkbox">
-                    </li>
-                    <li>
-                        <p>Walnuts</p>
-                        <input type="checkbox">
-                    </li>
-                    <li>
-                        <p>Walnuts</p>
-                        <input type="checkbox">
-                    </li>
-                    <li>
-                        <p>Walnuts</p>
-                        <input type="checkbox">
-                    </li>
-                    <li>
-                        <p>Walnuts</p>
-                        <input type="checkbox">
-                    </li>
-                    <li>
-                        <p>Walnuts</p>
-                        <input type="checkbox">
-                    </li>
-
-                </ul>
-            </section>
-            <aside class="foodRestrictions">
-                <h1>Food Restrictions</h1>
-                <ul class="foodRestrictionsContainer">
-                    <li>
-                        <img src="/public/vinnyPic.webp" alt="">
-                        <p>Walnut Allergy</p>
-                        <div class='bx bxs-help-circle foodRestrictionsQuestionMarkIcon'></div>
-                    </li>
-                    <li>
-                        <img src="/public/vinnyPic.webp" alt="">
-                        <p>Lactose Intolerant</p>
-                        <div class='bx bxs-help-circle foodRestrictionsQuestionMarkIcon'></div>
-                    </li>
-                </ul>
-            </aside>
+      <section class="fridgeRow1">
+        <section class="shoppingList">
+          <h1>Shopping List</h1>
+          <ul class="shoppingListContainer">
+            <li>
+              <p>Walnuts</p>
+              <input type="checkbox" />
+            </li>
+            <li>
+              <p>Walnuts</p>
+              <input type="checkbox" />
+            </li>
+            <li>
+              <p>Walnuts</p>
+              <input type="checkbox" />
+            </li>
+            <li>
+              <p>Walnuts</p>
+              <input type="checkbox" />
+            </li>
+            <li>
+              <p>Walnuts</p>
+              <input type="checkbox" />
+            </li>
+            <li>
+              <p>Walnuts</p>
+              <input type="checkbox" />
+            </li>
+            <li>
+              <p>Walnuts</p>
+              <input type="checkbox" />
+            </li>
+            <li>
+              <p>Walnuts</p>
+              <input type="checkbox" />
+            </li>
+          </ul>
         </section>
+        <aside class="foodRestrictions">
+          <h1>Food Restrictions</h1>
+          <ul class="foodRestrictionsContainer">
+            <li>
+              <img src="./vinnyPic.webp" alt="" />
+              <p>Walnut Allergy</p>
+              <div
+                class="bx bxs-help-circle foodRestrictionsQuestionMarkIcon"
+              ></div>
+            </li>
+            <li>
+              <img src="./vinnyPic.webp" alt="" />
+              <p>Lactose Intolerant</p>
+              <div
+                class="bx bxs-help-circle foodRestrictionsQuestionMarkIcon"
+              ></div>
+            </li>
+          </ul>
+        </aside>
+      </section>
 
-        <section class="fridgeRow2">
-            <h1>Fridge</h1>
-            <table class="fridgeTable">
-                <tr class="fridgeTableHeading">
-                    <th class="fridgeTableHeading">Owner</th>
-                    <th class="fridgeTableHeading">Item</th>
-                </tr>
-                <tr>
-                    <th>
-                        <img src="/public/vinnyPic.webp" alt="" class="fridgeTableProfileIcon">
-                    </th>
-                    <th class="fridgeTableItemContainer">
-                        <p>Whipped Cream</p>
-                        <img src="/public/redWarningIcon.png" alt="">
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <img src="/public/vinnyPic.webp" alt="" class="fridgeTableProfileIcon">
-                    </th>
-                    <th class="fridgeTableItemContainer">
-                        <p>Whipped Cream</p>
-                        <img src="/public/redWarningIcon.png" alt="">
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <img src="/public/vinnyPic.webp" alt="" class="fridgeTableProfileIcon">
-                    </th>
-                    <th class="fridgeTableItemContainer">
-                        <p>Whipped Cream</p>
-                        <img src="/public/redWarningIcon.png" alt="">
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <img src="/public/vinnyPic.webp" alt="" class="fridgeTableProfileIcon">
-                    </th>
-                    <th class="fridgeTableItemContainer">
-                        <p>Whipped Cream</p>
-                        <img src="/public/redWarningIcon.png" alt="">
-                    </th>
-                </tr>
-            </table>
-        </section>
-
+      <section class="fridgeRow2">
+        <h1>Fridge</h1>
+        <table class="fridgeTable">
+          <tr class="fridgeTableHeading">
+            <th class="fridgeTableHeading">Owner</th>
+            <th class="fridgeTableHeading">Item</th>
+          </tr>
+          <tr>
+            <th>
+              <img
+                src="./vinnyPic.webp"
+                alt=""
+                class="fridgeTableProfileIcon"
+              />
+            </th>
+            <th class="fridgeTableItemContainer">
+              <p>Whipped Cream</p>
+              <img src="./redWarningIcon.png" alt="" />
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <img
+                src="./vinnyPic.webp"
+                alt=""
+                class="fridgeTableProfileIcon"
+              />
+            </th>
+            <th class="fridgeTableItemContainer">
+              <p>Whipped Cream</p>
+              <img src="./redWarningIcon.png" alt="" />
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <img
+                src="./vinnyPic.webp"
+                alt=""
+                class="fridgeTableProfileIcon"
+              />
+            </th>
+            <th class="fridgeTableItemContainer">
+              <p>Whipped Cream</p>
+              <img src="./redWarningIcon.png" alt="" />
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <img
+                src="./vinnyPic.webp"
+                alt=""
+                class="fridgeTableProfileIcon"
+              />
+            </th>
+            <th class="fridgeTableItemContainer">
+              <p>Whipped Cream</p>
+              <img src="./redWarningIcon.png" alt="" />
+            </th>
+          </tr>
+        </table>
+      </section>
     </main>
-    
-</body>
+  </body>
 </html>
