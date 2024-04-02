@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     
     <nav>
         <div class="navLeft"> 
+            <div id="menu-icon" class="bx bx-menu"></div>
             <img src="" alt="">
             <img src="/public/logo.png" alt="logo" class="navLogo">
             <ul>
@@ -27,7 +29,10 @@
 
     <main>
         <h1>Mates</h1>
-        <input type="text" placeholder="Roomie Search">
+        <div class="searchContainer">
+            <i class="bx bx-search"></i>
+            <input type="text" placeholder="Roomie Search">
+        </div>
 
         <section class="roomateInfoTileContainer">
             <div class="roomateInfoTile">
@@ -38,25 +43,27 @@
                     </div>
                     <div class="roomateInfoTileRow2">
                         <div>
-                            <img src="/public/phone.png" alt="phone icon">
+                            <div id="phone-icon" class='bx bxs-phone'></div>
                             <p>(000) 000-000</p>
                         </div>
                         <div>
-                            <img src="/public/email.png" alt="email icon">
+                            <div id="email-icon" class='bx bxs-envelope'></div>
                             <p>email@gmail.com</p>
                         </div>
                     </div>
                     <div class="rommateInfoTileRow3">
-                        <p>Important Info</p>
+                        <p><b>Important Info</b></p>
                         <ul>
                             <li>Epi-pen under bed</li>
                             <li>Cat allergy</li>
                         </ul>
                     </div>
-                    <div class="rommateInfoTileRow4">
-                        <p>Emergency Contact</p>
-                        <p>Mom - (000) 000-0000</p>
-                        <p>Dad - (000) 000-0000</p>
+                    <div class="roommateInfoTileRow4">
+                        <p><b>Emergency Contact</b></p>
+                        <div class="emergencyContacts">
+                            <p>Mom - (000) 000-0000</p>
+                            <p>Dad - (000) 000-0000</p>
+                        </div>
                     </div>
                 </div>
             </div>
