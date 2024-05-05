@@ -14,7 +14,7 @@
     <nav>
       <div class="navLeft">
         <div id="menu-icon" class="bx bx-menu"></div>
-        <img src="./logo.png" alt="logo" class="navLogo" />
+        <img src="/images/logo.png" alt="logo" class="navLogo" />
         <div>
           <a href="index.html">Home</a>
           <a>Calendar</a>
@@ -23,91 +23,89 @@
         </div>
       </div>
       <div class="navRight">
-        <img src="./vinnyPic.webp" alt="profile icon" />
-        <img src="./bell.png" alt="notification bell" />
+        <img src="/images/vinnyPic.webp" alt="profile icon" />
+        <img src="/images/bell.png" alt="notification bell" />
       </div>
     </nav>
 
     <main>
       <h1>Home</h1>
       <div class="allRoomatesHeading">
-        <h2>Roomies (4)</h2>
+        <h2 id="roomiesHeader">Roomies (4)</h2>
         <div>
-          <p>Add a Roomie</p>
+          <button onclick="newRoommate()">Add a Roomie</button>
           <div id="plus-icon" class="bx bxs-plus-circle"></div>
         </div>
       </div>
       <div class="allRoomatesProfileImgContainer">
-        <img src="./vinnyPic.webp" alt="" />
-        <img src="./vinnyPic.webp" alt="" />
-        <img src="./vinnyPic.webp" alt="" />
-        <img src="./vinnyPic.webp" alt="" />
+        <img src="/images/roomate1.jpeg" alt="" />
+        <img src="/images/roomate2.jpg" alt="" />
+        <img src="/images/roomate3.jpg" alt="" />
+        <img src="/images/roomate4.jpg" alt="" />
       </div>
 
       <h2>Today's Tasks</h2>
 
-      <table class="todaysTaskTable">
+      <div id="taskInput">
+        <input
+          type="radio"
+          name="image"
+          value="/images/image1.jpeg"
+          id="image1"
+          checked
+        />
+        <label for="image1"
+          ><img src="/images/roomate1.jpeg" alt="Image 1"
+        /></label>
+
+        <input
+          type="radio"
+          name="image"
+          value="/images/roomate2.jpg"
+          id="image2"
+        />
+        <label for="image2"
+          ><img src="/images/roomate2.jpg" alt="Image 2"
+        /></label>
+
+        <input
+          type="radio"
+          name="image"
+          value="/images/roomate3.jpg"
+          id="image3"
+        />
+        <label for="image3"
+          ><img src="/images/roomate3.jpg" alt="Image 3"
+        /></label>
+
+        <input
+          type="radio"
+          name="image"
+          value="/images/roomate4.jpg"
+          id="image4"
+        />
+        <label for="image4"
+          ><img src="/images/roomate4.jpg" alt="Image 4"
+        /></label>
+
+        <input
+          type="text"
+          id="taskNameInput"
+          placeholder="Task Name"
+          required="true"
+        />
+        <button onclick="newTask()">Add Task</button>
+      </div>
+
+      <table class="todaysTaskTable" id="todaysTaskTable">
         <tr class="taskTableHeading">
           <th>Roomie</th>
-          <th>Task - February 25 2024</th>
+          <th>Tasks - February 25 2024</th>
           <th>Status</th>
-        </tr>
-        <tr class="taskTableRow">
-          <th>
-            <img src="./vinnyPic.webp" alt="" />
-          </th>
-          <th>
-            <p>Pay Electric Bill (DUE TODAY!!)</p>
-          </th>
-          <th>
-            <input type="checkbox" />
-          </th>
-        </tr>
-        <tr class="taskTableRow">
-          <th>
-            <img src="./vinnyPic.webp" alt="" />
-          </th>
-          <th>
-            <p>Pay Electric Bill (DUE TODAY!!)</p>
-          </th>
-          <th>
-            <input type="checkbox" />
-          </th>
-        </tr>
-        <tr class="taskTableRow">
-          <th>
-            <img src="./vinnyPic.webp" alt="" />
-          </th>
-          <th>
-            <p>Pay Electric Bill (DUE TODAY!!)</p>
-          </th>
-          <th>
-            <input type="checkbox" />
-          </th>
-        </tr>
-        <tr class="taskTableRow">
-          <th>
-            <img src="./vinnyPic.webp" alt="" />
-          </th>
-          <th>
-            <p>Pay Electric Bill (DUE TODAY!!)</p>
-          </th>
-          <th>
-            <input type="checkbox" />
-          </th>
-        </tr>
-        <tr class="taskTableRow">
-          <th>
-            <img src="./vinnyPic.webp" alt="" />
-          </th>
-          <th>
-            <p>Pay Electric Bill (DUE TODAY!!)</p>
-          </th>
-          <th>
-            <input type="checkbox" />
-          </th>
         </tr>
       </table>
     </main>
+
+    <script src="./index.js"></script>
   </body>
 </html>
