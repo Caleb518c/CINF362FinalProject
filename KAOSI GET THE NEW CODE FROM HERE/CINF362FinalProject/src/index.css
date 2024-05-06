@@ -1,0 +1,367 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,500&display=swap');
+
+
+* { 
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+/* --------------------- =NavBar ------------------------ */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 1%;
+    box-sizing: border-box;
+    
+    background-color: rgb(195, 195, 195);
+
+    
+}   
+
+    .navLeft {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+    }
+
+        #menu-icon{
+            font-size: 35px;
+            z-index: 10001;
+            cursor: pointer;
+            margin: 10px;
+            margin-right: 20px;
+            border-radius: 3px;
+        }
+
+        .navLogo {
+            width: 65px;
+            margin-top: -20px;
+            margin-right: 5px;
+        }
+
+        nav ul {
+            display: flex;
+            width: 400px;
+
+        }
+
+        nav ul a {
+            all: unset;
+            padding: 0 3%;
+
+            cursor: pointer;
+        }
+
+    .navRight {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .navRight img:nth-child(1) {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+
+            border-radius: 9999px;
+        }
+
+
+        main{
+            padding: 60px 7%;
+        }
+
+            main h1{
+                margin-bottom: 40px;
+                font-size: 35px;
+
+            }
+            main h2{
+                margin-bottom: 5px;
+                font-size: 25px;
+            }
+    /* ----------------------- =Home ---------------------------- */
+
+
+    .allRoomatesHeading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+        .allRoomatesHeading div {
+            display: flex;
+        }
+
+        #plus-icon{
+            font-size: 20px;
+            z-index: 1;
+            margin-left: 10px;
+        }
+
+    .allRoomatesProfileImgContainer {
+
+    }
+
+        .allRoomatesProfileImgContainer a img {
+            width: 75px;
+
+            border-radius: 9999px;
+        }
+
+
+    .inputRadios {
+        display: flex;
+    }
+
+        .inputRadios label {
+            margin: 5px;
+        }
+
+        .inputRadios label img {
+            border-radius: 9999px;
+            width: 50px;
+            height: 50px;
+        }
+
+    #taskNameInput {
+        margin-bottom: 20px;
+    }
+    
+
+    .todaysTaskTable {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 1500px; 
+        margin: 0 auto; 
+        overflow: hidden; 
+        border-radius: 3px; 
+
+    }
+        .todaysTaskTable tr th {
+            border: solid black 2px;
+        }
+            .todaysTaskTable th p{
+                margin: 20px;
+            }
+
+            .todaysTaskTable img {
+                width: 50px;
+                border-radius: 9999px;
+            }
+
+    
+
+/* ------------------ =Fridge ------------------ */
+
+
+.fridgeRow1 {
+    display: flex;
+    gap: 15%;
+    margin-bottom: 50px;
+}
+
+    .shoppingList {
+        width: 50%;
+    }
+
+        .shoppingListContainer {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+
+            background-color: rgb(218, 218, 218);
+            border-radius: 15px;
+        }
+
+            .shoppingListContainer li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                padding: 3%;
+                box-sizing: border-box;
+            }
+
+    .foodRestrictions {
+        width: 30%;
+    }
+
+        .foodRestrictionsContainer {
+            display: flex;
+            flex-direction: column;
+            padding: 1%;
+
+            background-color: rgb(218, 218, 218);
+            border-radius: 15px;
+        }
+
+            .foodRestrictionsContainer li {
+                display: flex;
+                align-items: center;
+                padding: 2%;
+            }
+            
+                .foodRestrictionsContainer li img:nth-child(1) {
+                    height: 50px;
+                    width: 50px;
+
+                    border-radius: 9999px;
+                }
+
+                .foodRestrictionsContainer li p {
+                    margin-left: 15px;
+                }
+
+                .foodRestrictionsQuestionMarkIcon {
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+
+
+.fridgeRow2{}
+
+    .fridgeTable{
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 1500px; 
+        margin: 0 auto; 
+        overflow: hidden; 
+    }
+
+        .fridgeTable th p{
+            margin: 30px;
+        }
+
+    .fridgeTable tr th {
+        border: solid black 1px;
+    }
+
+    .fridgeTable th:not(.fridgeTableHeading) {
+        height: 60px;
+    }
+
+        .fridgeTableProfileIcon {
+           height: 50px; 
+           width: 50px;
+
+           border-radius: 9999px;
+        }
+
+        .fridgeTableItemContainer {
+            display: flex;
+            align-items: center;
+        }
+
+            .fridgeTableItemContainer img {
+                height: 50px;
+                width: 50px;
+            }
+
+
+
+
+
+
+
+/* ------------------ =RoomateInfoPage --------------------- */
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    border: 1px solid #000000;
+    background-color: rgb(208, 208, 208);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 20px 5px;
+}
+
+    .searchContainer input[type="text"] {
+        flex: 1;
+        border: none;
+        outline: none;
+        background-color: rgb(208, 208, 208);
+
+    }
+
+        .searchContainer i {
+            color: #888;
+            font-size: 20px;
+            margin-right: 20px;
+        }
+
+.roomateInfoTileContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+    .roomateInfoTile {
+        display: flex;
+        padding: 20px;
+        margin-top: 1%;
+        width: 80%;
+
+        border-radius: 15px;
+        background: rgb(208, 208, 208);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); 
+    }
+
+        .roomateProfileMainImg {
+            width: 150px; 
+            height: 150px;
+
+            border-radius: 9999px;
+            margin-right: 20px;
+        }
+        
+
+        .roomateInfoTileRow2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            grid-gap: 10px; 
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+            .roomateInfoTileRow2 div {
+                display: flex;
+                
+            }
+
+            .roomateInfoTileRow2 div img {
+                width: 25px;     
+                
+            }
+
+            .roommateInfoTileRow4 {
+                margin-top: 10px;
+            }
+            
+            .emergencyContacts {
+                display: grid;
+                grid-template-columns: 1fr 1fr; 
+                grid-gap: 10px;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+            
+            .emergencyContacts p {
+                margin: 0;
+            }
+
+
+
+
+
+
+
+
+

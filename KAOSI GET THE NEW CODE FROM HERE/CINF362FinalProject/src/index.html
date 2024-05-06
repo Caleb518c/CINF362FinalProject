@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navLeft">
+        <div id="menu-icon" class="bx bx-menu"></div>
+        <img src="./images/logo.png" alt="logo" class="navLogo" />
+        <ul>
+          <a href="index.html">Home</a>
+          <a href="fridge.php">Fridge</a>
+          <a href="roomates.html">Roomies</a>
+        </ul>
+      </div>
+      <div class="navRight">
+        <img src="./images/roomate2.jpg" alt="profile icon" />
+      </div>
+    </nav>
+
+    <main>
+      <h1>Home</h1>
+      <div class="allRoomatesHeading">
+        <h2 id="roomiesHeader">Roomies (4)</h2>
+        <div>
+          <button onclick="newRoommate()">Add a Roomie</button>
+          <div id="plus-icon" class="bx bxs-plus-circle"></div>
+        </div>
+      </div>
+      <div class="allRoomatesProfileImgContainer">
+        <a href="./roomates.html">
+          <img src="./images/roomate1.jpeg" alt="" />
+        </a>
+        <a href="./roomates.html">
+          <img src="./images/roomate2.jpg" alt="" />
+        </a>
+        <a href="./roomates.html">
+          <img src="./images/roomate3.jpg" alt="" />
+        </a>
+        <a href="./roomates.html">
+          <img src="./images/roomate4.jpg" alt="" />
+        </a>
+      </div>
+
+      <h2>Today's Tasks</h2>
+
+      <div id="taskInput">
+        <div class="inputRadios">
+          <input
+            type="radio"
+            name="image"
+            value="./images/image1.jpeg"
+            id="image1"
+          />
+          <label for="image1"
+            ><img src="./images/roomate1.jpeg" alt="Image 1"
+          /></label>
+
+          <input
+            type="radio"
+            name="image"
+            value="./images/roomate2.jpg"
+            id="image2"
+          />
+          <label for="image2"
+            ><img src="./images/roomate2.jpg" alt="Image 2"
+          /></label>
+
+          <input
+            type="radio"
+            name="image"
+            value="./images/roomate3.jpg"
+            id="image3"
+          />
+          <label for="image3"
+            ><img src="./images/roomate3.jpg" alt="Image 3"
+          /></label>
+
+          <input
+            type="radio"
+            name="image"
+            value="./images/roomate4.jpg"
+            id="image4"
+          />
+          <label for="image4"
+            ><img src="./images/roomate4.jpg" alt="Image 4"
+          /></label>
+        </div>
+
+        <input
+          type="text"
+          id="taskNameInput"
+          placeholder="Task Name"
+          required="true"
+        />
+        <button onclick="newTask()">Add Task</button>
+      </div>
+
+      <table class="todaysTaskTable" id="todaysTaskTable">
+        <tr class="taskTableHeading">
+          <th>Roomie</th>
+          <th>Tasks - February 25 2024</th>
+          <th>Status</th>
+        </tr>
+      </table>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
